@@ -1,0 +1,53 @@
+.sp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.sp-card {
+background-color:#191918;
+border-radius: 7px;
+padding: 1.55em;
+width: 250px;
+text-align: left;
+transition: background-color ease 500ms;
+}
+
+.sp-card:hover {
+background-color:#262627;
+cursor: pointer;
+
+}
+
+.sp-card > img {
+border-radius: inherit;
+width: 100%;
+}
+
+
+.sp-card .track-title {
+margin: 0.25em 0;
+font-weight: bolder;
+font-size: 1em;
+}
+
+.sp-card h4 {
+margin: 0;
+margin-top: 1em;
+margin-bottom: 0.60em;
+font-size: 1.1em;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+width: 200px;
+}
+
+
+.sp-card p {
+margin: 0;
+color: #848584;
+font-weight: 600;
+line-height: 1.5em;
+min-height: 3em;
+
+}

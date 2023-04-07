@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  font-family: 'Roboto';
+}
+
+.yt-card {
+    max-width: 360px;
+    width: 100%;
+}
+
+.yt-card > img {
+    width: 100%;
+    object-fit: cover   ;
+}
+
+
+.yt-card h4 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1.4em;
+
+}
+
+.yt-card p {
+  margin: 0.55em  0;
+  color: rgb(96,96,96);
+  font-size: 0.85em;
+}
+
+a.yt-card {
+  color: black;
+  text-decoration: none;
+}
+
+.channel {
+  flex-shrink: 1;
+  display: grid;
+}
+.channel > img {
+  border-radius: 50%;
+  width: 36px;
+}
+
+.yt-card > img {
+  border-radius: 10px;
+}
+
+.details {
+  display: flex;
+  gap: 10px;
+  margin-top: 0.45em;
+}
+
+
+.details > img {
+  float: left;
+  border-radius: 50%;
+  width: 100%;
+  flex-shrink: 1;
+}
+
+.vid-details {
+  flex:1;
+}
+
+.vid-details .vid-title {
+    max-height: 2.8em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
