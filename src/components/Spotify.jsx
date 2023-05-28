@@ -13,8 +13,7 @@ export default function Spotify(){
 
     const { setSpotifyTrack } = useContext(SpotifyContext);
 
-    const client_id = import.meta.env.VITE_SPOTIFY_CLIENT_ID;
-    const client_secret = import.meta.env.VITE_SPOTIFY_CLIENT_SECRET;
+    const token = import.meta.env.VITE_SPOTIFY_TOKEN;
 
     useEffect(()=> {
         authorize();
@@ -26,7 +25,7 @@ export default function Spotify(){
             method:'post',
             headers:{
                 'Content-Type':'application/x-www-form-urlencoded',
-                'Authorization':'Basic ' + (new Buffer(client_id + ':' + client_secret).toString('base64'))
+                'Authorization':'Basic ' + token
             },
         })
         .catch(e => { return false; })
