@@ -22,6 +22,7 @@ Copy the file `.env.local.example` and rename it to `.env.local`.
 VITE_YOUTUBE_KEY="Youtube Data API Key"
 VITE_SPOTIFY_CLIENT_ID="Spotify Client Id"
 VITE_SPOTIFY_CLIENT_SECRET="Spotify Client Secret"
+VITE_SPOTIFY_CLIENT_SECRET="Spotify Client ID:Spotify Client Secret in Base64"
 ```
 
 Run the project using:
